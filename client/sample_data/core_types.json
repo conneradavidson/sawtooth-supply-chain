@@ -3,45 +3,318 @@
     "name": "mineral",
     "properties": [
         {
-          "name": "tag",
+          "name": "Container Barcode",
           "dataType": 4,
           "required": true,
           "fixed": true
         },
         {
-          "name": "parent_id",
-          "dataType": 4,
-          "fixed": true
-        },
-        {
-          "name": "parent_tag",
-          "dataType": 4,
-          "fixed": true
-        },
-        {
-          "name": "type",
+          "name": "Container Barcode Type",
           "dataType": 5,
           "required": true,
           "fixed": true,
-          "enumOptions": [
-            "Cassiterite",
-            "Cobalt",
-            "Coltan",
-            "Copper",
-            "Diamonds",
-            "Emeralds",
-            "Gold",
-            "Niobium",
-            "Rubies",
-            "Sapphires",
-            "Tin",
-            "Tungsten",
-            "Uranium",
-            "Wolframite"
+          "enumOptions": 
+          [
+            "Code-128",
+            "Code-11",
+            "Code-2of5 Interleaved",
+            "Code-39",
+            "Code-39 Full ASCII",
+            "Code-93",
+            "Flattermarken",
+            "GS1-128 (UCC/EAN-128)",
+            "MSI",
+            "Pharmacode One-Track",
+            "Pharmacode Two-Track",
+            "Telepen Alpha",
+            "Australian Post Standard Customer",
+            "DAFT",
+            "DPD Barcode (DPD Parcel Label)",
+            "Japanese Postal (Customer) Code",
+            "KIX (TNT Post Netherlands)",
+            "Korean Postal Authority Code",
+            "Planet Code 12",
+            "Royal Mail 4-State",
+            "Royal Mail Mailmark 4-State",
+            "USPS PostNet 5",
+            "USPS PostNet 9",
+            "USPS PostNet 11",
+            "USPS IM Package",
+            "UPU S10",
+            "GS1-DataBar",
+            "GS1-DataBar Stacked",
+            "GS1-DataBar Stacked Omni",
+            "GS1-DataBar Limited",
+            "GS1-DataBar Expanded",
+            "GS1-DataBar Expanded Stacked",
+            "GS1-128 Composite Symbology",
+            "GS1-DataBar Composite",
+            "GS1-DataBar Stacked Composite",
+            "GS1-DataBar Stacked Omni Composite",
+            "GS1-DataBar Limited Composite",
+            "GS1-DataBar Expanded Composite",
+            "GS1-DataBar Expanded Stacked Composite",
+            "EAN-8",
+            "EAN-13",
+            "EAN-8 Composite Symbology",
+            "EAN-13 Composite Symbology",
+            "UPC-A",
+            "UPC-E",
+            "UPC-A Composite Symbology",
+            "UPC-E Composite Symbology",
+            "QR Code",
+            "Data Matrix",
+            "Aztec",
+            "Codablock-F",
+            "MaxiCode",
+            "MicroPDF417",
+            "PDF417",
+            "Micro QR Code",
+            "Han Xin",
+            "DotCode",
+            "Royal Mail Mailmark 2D",
+            "NTIN Code",
+            "PPN Code",
+            "Swiss QR Code",
+            "ISBN 13",
+            "ISBN 13 + 5 Digits",
+            "ISMN",
+            "ISSN",
+            "ISSN + 2 Digits"
           ]
         },
         {
-          "name": "status",
+          "name": "Container NFC Tag",
+          "dataType": 4,
+          "required": true,
+          "fixed": true
+        },
+        {
+          "name": "Parent Container Serial Number",
+          "dataType": 4,
+          "fixed": true
+        },
+        {
+          "name": "Parent Container Barcode Type",
+          "dataType": 5,
+          "required": true,
+          "fixed": true,
+          "enumOptions": 
+          [
+            "Code-128",
+            "Code-11",
+            "Code-2of5 Interleaved",
+            "Code-39",
+            "Code-39 Full ASCII",
+            "Code-93",
+            "Flattermarken",
+            "GS1-128 (UCC/EAN-128)",
+            "MSI",
+            "Pharmacode One-Track",
+            "Pharmacode Two-Track",
+            "Telepen Alpha",
+            "Australian Post Standard Customer",
+            "DAFT",
+            "DPD Barcode (DPD Parcel Label)",
+            "Japanese Postal (Customer) Code",
+            "KIX (TNT Post Netherlands)",
+            "Korean Postal Authority Code",
+            "Planet Code 12",
+            "Royal Mail 4-State",
+            "Royal Mail Mailmark 4-State",
+            "USPS PostNet 5",
+            "USPS PostNet 9",
+            "USPS PostNet 11",
+            "USPS IM Package",
+            "UPU S10",
+            "GS1-DataBar",
+            "GS1-DataBar Stacked",
+            "GS1-DataBar Stacked Omni",
+            "GS1-DataBar Limited",
+            "GS1-DataBar Expanded",
+            "GS1-DataBar Expanded Stacked",
+            "GS1-128 Composite Symbology",
+            "GS1-DataBar Composite",
+            "GS1-DataBar Stacked Composite",
+            "GS1-DataBar Stacked Omni Composite",
+            "GS1-DataBar Limited Composite",
+            "GS1-DataBar Expanded Composite",
+            "GS1-DataBar Expanded Stacked Composite",
+            "EAN-8",
+            "EAN-13",
+            "EAN-8 Composite Symbology",
+            "EAN-13 Composite Symbology",
+            "UPC-A",
+            "UPC-E",
+            "UPC-A Composite Symbology",
+            "UPC-E Composite Symbology",
+            "QR Code",
+            "Data Matrix",
+            "Aztec",
+            "Codablock-F",
+            "MaxiCode",
+            "MicroPDF417",
+            "PDF417",
+            "Micro QR Code",
+            "Han Xin",
+            "DotCode",
+            "Royal Mail Mailmark 2D",
+            "NTIN Code",
+            "PPN Code",
+            "Swiss QR Code",
+            "ISBN 13",
+            "ISBN 13 + 5 Digits",
+            "ISMN",
+            "ISSN",
+            "ISSN + 2 Digits"
+          ]
+        },
+        {
+          "name": "Parent Container NFC tag",
+          "dataType": 4,
+          "fixed": true
+        },
+        { // If Container Material comes from large batch //
+          "name": "Batch ID or Serial Number",
+          "dataType": 4,
+          "fixed": true
+        },
+        { // If Container Material comes from large batch //
+          "name": "Batch NFC Tag Hash", 
+          "dataType": 4,
+          "fixed": true
+        },
+        {
+          "name": "asset type",
+          "dataType": 5,
+          "required": true,
+          "fixed": true,
+          "enumOptions": 
+          [
+            "Coltan Ore",
+            "Coltan Concentrate",
+            "Chemically Processed Coltan",
+            "Tantalum",
+            "Tantalum Salt",
+            "Tantalum Metal",
+            "Tantalum Powder",
+            "Tantalum Capacitor",
+            "Gold Ore",
+            "Gold Concentrate",
+            "Gold Dore Bar",
+            "Refined Gold Bar",
+            "LBMA GDL Bar (99.95)",
+            "LBMA GDL Bar (99.99)",
+            "Kilo Bar (99.95)",
+            "Kilo Bar (99.99)",
+            "Gold Foil",
+            "Gold Chains",
+            "Gold Leaf",
+            "Cassiterite Ore",
+            "Cassiterite Concentrate",
+            "Tin Metal",
+            "Tin Solder",
+            "Cobalt Ore",
+            "Cobalt Concentrate",
+            "Chemically Processed Cobalt",
+            "Refined Cobalt",
+            "Wolframite Ore",
+            "Wolframite Concentrate",
+            "Tungsten Powder",
+            "Tungsten Alloy",
+            "Tungsten Compounds",
+            "Connector Plating",
+            "Alloy",
+            "Multilayer Ceramic Capacitors",
+            "Nickle Ore", // Pending Guidance from Brian //
+            "Nickle Laterites", // Pending Guidance from Brian //
+            "Silver Ore", // Pending Guidance from Brian //
+            "Palladium Ore", // Pending Guidance from Brian //
+            "Platinum Ore", // Pending Guidance from Brian //
+            "Lanthanum Ore", // Pending Guidance From Brian //
+            "Cerium Ore", // Pending Guidance From Brian //
+            "Neodymium Ore", // Pending Guidance From Brian //
+            "Praseodymium Ore", // Pending Guidance From Brian //
+            "Samarium Ore", // Pending Guidance From Brian //
+            "Gadolinium Ore", // Pending Guidance From Brian //
+            "Iron Ore", // Pending Guidance From Brian //
+            "Zinc Ore" // Pending Guidance From Brian //
+            "Lithium Ore" // Pending Guidance From Brian //
+            "Aluminum Ore" // Pending Guidance From Brian //
+            "Copper Ore", // Pending Confirmation from Brian //
+            "Copper Concentrate", // Pending Confirmation from Brian //
+            "Refined Copper", // Pending Confirmation from Brian //
+            "Processed Copper", // Pending Confirmation from Brian //
+            "Niobium Ore", // Pending Confirmation from Brian //
+            "Uranium Ore", // Pending Confirmation from Brian //
+            "Processed Uranium" // Pending Confirmation from Brian //
+            "Uranium Liquor", // Pending Confirmation from Brian //
+            "Uranium Precipitate", // Pending Confirmation from Brian //
+            "Uranium Concentrate", // Pending Confirmation from Brian //
+            "Uraninite", // Pending Confirmation from Brian //
+            "Pitchblende", // Pending Confirmation from Brian //
+            "Coffinite", // Pending Confirmation from Brian //
+            "Brannerite", // Pending Confirmation from Brian //
+            "Davidite", // Pending Confirmation from Brian //
+            "Thucholite", // Pending Confirmation from Brian //
+            "Autunite", // Pending Confirmation from Brian //
+            "Carnotite", // Pending Confirmation from Brian //
+            "Gummite", // Pending Confirmation from Brian //
+            "Seleeite", // Pending Confirmation from Brian //
+            "Torbernite", // Pending Confirmation from Brian //
+            "Tyuyamunite", // Pending Confirmation from Brian //
+            "Uranocircite", // Pending Confirmation from Brian //
+            "Uranophane", // Pending Confirmation from Brian //
+            "Zeunerite", // Pending Confirmation from Brian //
+            "Gold Ring", // Gemstone Implementation //
+            "Unprocessed Emerald Ore", // Gemstone Implementation //
+            "Processed Emerald Stone", // Gemstone Implementation //
+            "Cut Emerald Stone", // Gemstone Implementation //
+            "Polished Emerald Stone", // Gemstone Implementation //
+            "Heat-Treated Emerald Stone", // Gemstone Implementation //
+            "Set Emerald Stone", // Gemstone Implementation //
+            "Unprocessed Ruby Ore", // Gemstone Implementation //
+            "Processed Ruby Stone", // Gemstone Implementation //
+            "Cut Ruby Stone", // Gemstone Implementation //
+            "Polished Ruby Stone", // Gemstone Implementation //
+            "Heat-Treated Ruby Stone", // Gemstone Implementation //
+            "Set Ruby Stone", // Gemstone Implementation //
+            "Unprocessed Sapphire Ore", // Gemstone Implementation //
+            "Processed Sapphire Stone", // Gemstone Implementation //
+            "Cut Sapphire Stone", // Gemstone Implementation //
+            "Polished Sapphire Stone", // Gemstone Implementation //
+            "Heat-Treated Sapphire Stone", // Gemstone Implementation //
+            "Set Sapphire Stone", // Gemstone Implementation //
+            "Unprocessed Diamond Ore", // Gemstone Implementation //
+            "Processed Diamond Stone", // Gemstone Implementation //
+            "Cut Diamond Stone", // Gemstone Implementation //
+            "Polished Diamond Stone", // Gemstone Implementation //
+            "Heat-Treated Diamond Stone", // Gemstone Implementation //
+            "Set Diamond Stone" // Gemstone Implementation //
+          ]
+        },
+        {
+          "name": "container subtype",
+          "dataType": 5,
+          "required": true,
+          "fixed": true,
+          "enumOptions": 
+          [
+            "Sealed Tamper-Evident Bag",
+            "Opened Tamper-Evident Bag",
+            "Sealed 55 Gallon Drum",
+            "Opened 55 Gallon Drum",
+            "Sealed Shipping Container",
+            "Locked LBMA Vault",
+            "Opened LBMA Vault",
+            "Pallet",
+            "Warehouse",
+            "Sealed Gold-Bar Package",
+            "Opened Gold-Bar Package"
+          ]
+        },
+        {
+          "name": "asset status",
           "dataType": 5,
           "required": true,
           "fixed": true,
@@ -49,25 +322,20 @@
             "Run-of-Mine",
             "Low-Grade",
             "Processed",
-            "Terminated Container",
+            "Concentrated",
             "Chemically Processed",
             "Smelted",
-            "Refined"
+            "Refined",
+            "Manufactured Product",
+            "Terminated Container", // For when the container is opened and termined //
+            "Cut", // Gemstone Implementation //
+            "Polished", // Gemstone Implementation //
+            "Heat-Treated", // Gemstone Implementation //
+            "Set" // Gemstone Implementation //
           ]
         },
         {
-          "name": "container",
-          "dataType": 5,
-          "required": true,
-          "fixed": true,
-          "enumOptions": [
-              "Sealed Tamper-Evident Bag",
-              "Sealed 55 Gallon Drum",
-              "Shipping Container"
-          ]
-        },
-        {
-          "name": "origin",
+          "name": "Country",
           "dataType": 5,
           "required": true,
           "fixed": true,
@@ -82,11 +350,207 @@
             "Rwanda",
             "South Sudan",
             "Sudan",
-            "Uganda"
+            "Uganda",
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "Andorra",
+            "Angola",
+            "Antigua and Barbuda",
+            "Argentina",
+            "Armenia",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "The Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belgium",
+            "Belize",
+            "Benin",
+            "Bhutan",
+            "Bolivia",
+            "Bosnia and Herzegovina",
+            "Botswana",
+            "Brazil",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "Cabo Verde",
+            "Cambodia",
+            "Cameroon",
+            "Canada",
+            "Central African Republic",
+            "Chad",
+            "Chile",
+            "China",
+            "Colombia",
+            "Comoros",
+            "Democratic Republic of the Congo",
+            "Republic of the Congo",
+            "Costa Rica",
+            "Côte d’Ivoire",
+            "Croatia",
+            "Cuba",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Djibouti",
+            "Dominica",
+            "Dominican Republic",
+            "East Timor (Timor-Leste)",
+            "Ecuador",
+            "Egypt",
+            "El Salvador",
+            "Equatorial Guinea",
+            "Eritrea",
+            "Estonia",
+            "Ethiopia",
+            "Fiji",
+            "Finland",
+            "France",
+            "Gabon",
+            "The Gambia",
+            "Georgia",
+            "Germany",
+            "Ghana",
+            "Greece",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea-Bissau",
+            "Guyana",
+            "Haiti",
+            "Honduras",
+            "Hungary",
+            "Iceland",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "Jamaica",
+            "Japan",
+            "Jordan",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "North Korea",
+            "South Korea",
+            "Kosovo",
+            "Kuwait",
+            "Kyrgyzstan",
+            "Laos",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Liberia",
+            "Libya",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Macedonia",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Marshall Islands",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Federated States of Micronesia",
+            "Moldova",
+            "Monaco",
+            "Mongolia",
+            "Montenegro",
+            "Morocco",
+            "Mozambique",
+            "Myanmar (Burma)",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "Netherlands",
+            "New Zealand",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "Norway",
+            "Oman",
+            "Pakistan",
+            "Palau",
+            "Panama",
+            "Papua New Guinea",
+            "Paraguay",
+            "Peru",
+            "Philippines",
+            "Poland",
+            "Portugal",
+            "Qatar",
+            "Romania",
+            "Russia",
+            "Rwanda",
+            "Saint Kitts and Nevis",
+            "Saint Lucia",
+            "Saint Vincent and the Grenadines",
+            "Samoa",
+            "San Marino",
+            "Sao Tome and Principe",
+            "Saudi Arabia",
+            "Senegal",
+            "Serbia",
+            "Seychelles",
+            "Sierra Leone",
+            "Singapore",
+            "Slovakia",
+            "Slovenia",
+            "Solomon Islands",
+            "Somalia",
+            "South Africa",
+            "Spain",
+            "Sri Lanka",
+            "Sudan",
+            "South Sudan",
+            "Suriname",
+            "Swaziland",
+            "Sweden",
+            "Switzerland",
+            "Syria",
+            "Taiwan",
+            "Tajikistan",
+            "Tanzania",
+            "Thailand",
+            "Togo",
+            "Tonga",
+            "Trinidad and Tobago",
+            "Tunisia",
+            "Turkey",
+            "Turkmenistan",
+            "Tuvalu",
+            "Uganda",
+            "Ukraine",
+            "United Arab Emirates",
+            "United Kingdom",
+            "United States",
+            "Uruguay",
+            "Uzbekistan",
+            "Vanuatu",
+            "Vatican City",
+            "Venezuela",
+            "Vietnam",
+            "Yemen",
+            "Zambia",
+            "Zimbabwe"
           ]
         },
         {
-          "name": "zone",
+          "name": "Zone",
           "dataType": 5,
           "required": true,
           "fixed": true,
@@ -102,21 +566,33 @@
             "Zone 9",
             "Zone 10",
             "Zone 11",
-            "Zone 12"
+            "Zone 12",
+            "Zone 13",
+            "Zone 14",
+            "Zone 15",
+            "Zone 16",
+            "Zone 17",
+            "Zone 18",
+            "Zone 19",
+            "Zone 20",
+            "Zone 21",
+            "Zone 22",
+            "Zone 23",
+            "Zone 24"
           ]
         },
         {
-          "name": "assay",
+          "name": "Container Weight(kg)",
           "dataType": 3,
           "numberExponent": -6
         },
         {
-          "name": "weight",
+          "name": "Container Primary Assay(%)",
           "dataType": 3,
           "numberExponent": -6
         },
         {
-          "name": "location",
+          "name": "location", // what is this? //
           "dataType": 7
         }
     ]
