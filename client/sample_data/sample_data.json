@@ -1,18 +1,28 @@
 {
   "records": [
     {
-      "recordId": "A63800786",
+      "recordId": "7h15-m1n3r41-w111-b3-t1n", // what is this? //
       "recordType": "mineral",
       "properties": [
           {
             "name": "tag",
             "dataType": 4,
-            "stringValue": "A6CB153E18AFDB71AB377B963FA3716270853F1B93630184058979AF93430C32"
+            "stringValue": "D41D52813B04EA51D8CCCE4462894699F2220D31446552A98C8781FBCEB14337"
+          },
+          {
+            "name": "parent_id",
+            "dataType": 4,
+            "stringValue": ""
+          }, 
+          {
+            "name": "parent_tag",
+            "dataType": 4,
+            "stringValue": ""
           },
           {
             "name": "type",
             "dataType": 5,
-            "enumValue": "Cassiterite"
+            "enumValue": "Coltan Ore"
           },
           {
             "name": "status",
@@ -27,7 +37,7 @@
           {
             "name": "origin",
             "dataType": 5,
-            "enumValue": "Democratic Republic of Congo"
+            "enumValue": "Democratic Republic of the Congo"
           },
           {
             "name": "zone",
@@ -37,33 +47,42 @@
           {
             "name": "assay",
             "dataType": 3,
-            "numberValue": 100000
+            "numberValue": 25.1813
           },
           {
             "name": "weight",
             "dataType": 3,
-            "numberValue": 100000000
+            "numberValue": 4
           },
           {
             "name": "location",
             "dataType": 7,
             "locationValue": {
-              "latitude": -11029343,
-              "longitude": 26532715
+              "latitude": -7.265,
+              "longitude": 27.46361111
             }
           }
       ],
       "ownerIndex": 0
     },
-
     {
-      "recordId": "A63800766",
+      "recordId": "7h15-m1n3r41-15-5h1ny",
       "recordType": "mineral",
       "properties": [
-          {
+           {
             "name": "tag",
             "dataType": 4,
-            "stringValue": "C38149964ECEF1060E885691F9AF80CEE11FFD34F40EAD3DC24C2804B9292F87"
+            "stringValue": "53AA86196E9D01D3E9EB29D9ABE8766D966EF304EEAF413D899D9257D9E56BC3"
+          },
+          {
+            "name": "parent_id",
+            "dataType": 4,
+            "stringValue": ""
+          }, 
+          {
+            "name": "parent_tag",
+            "dataType": 4,
+            "stringValue": ""
           },
           {
             "name": "type",
@@ -83,29 +102,29 @@
           {
             "name": "origin",
             "dataType": 5,
-            "enumValue": "China"
+            "enumValue": "Democratic Republic of the Congo"
           },
           {
             "name": "zone",
             "dataType": 5,
-            "enumValue": "Zone 3"
+            "enumValue": "Zone 4"
           },
           {
             "name": "assay",
             "dataType": 3,
-            "numberValue": 200000
+            "numberValue": 59.34
           },
           {
             "name": "weight",
             "dataType": 3,
-            "numberValue": 50000000
+            "numberValue": 0.04261
           },
           {
             "name": "location",
             "dataType": 7,
             "locationValue": {
-              "latitude": 41462024,
-              "longitude": 120412043
+              "latitude": -1.4325,
+              "longitude": 28.06333333
             }
           }
       ],
